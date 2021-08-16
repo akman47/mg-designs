@@ -4,7 +4,7 @@ import MgLogo from '../../assets/icons/MGlogo.jpeg';
 
 function Header({currentPage, handlePageChange}) {
 
-    const tabs = ['About', 'Portfolio', 'Contact'];
+    const tabs = ['About', 'Founder', 'Portfolio', 'Contact'];
 
     return(
         <header className="flex-row space-between">

@@ -54,7 +54,7 @@ function Contact() {
                 <div>
                     Phone: <a href="tel:+17132690311">(713) 269-0311</a><br />
                     Email: <a href="mailto:melissa@mgdesingsllc.com">melissa@mgdesignsllc.com</a><br />
-                    Address: 821 Aurora, Houston, TX
+                    Address: 821 Aurora, Houston, TX 77009
                 </div>
             </div>  
         </section>
