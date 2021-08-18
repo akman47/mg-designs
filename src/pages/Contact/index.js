@@ -49,8 +49,10 @@ function Contact() {
                 )}
                 <button className="btn" type="submit">Submit</button>
             </form>
+            <br></br>
+            <br></br>
             <div className="contact-info">
-                <h4>Contact Info</h4>
+                <h4>Contact Information</h4>
                 <div>
                     Phone: <a href="tel:+17132690311">(713) 269-0311</a><br />
                     Email: <a href="mailto:melissa@mgdesingsllc.com">melissa@mgdesignsllc.com</a><br />
