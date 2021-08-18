@@ -10,13 +10,14 @@ import Footer from './components/Footer';
 import NoMatch from './pages/NoMatch';
 
 function App() {
-  const [currentPage, handlePageChange] = useState('About');
+  const [currentPage, handlePageChange] = useState('Home');
 
   return (
     <Router>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={Services} />
         <Route exact path="/projects" component={Projects} />
