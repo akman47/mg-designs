@@ -4,20 +4,21 @@ console.log('message', Message);
 
 const resolvers = {
     Query: {
-        messages: async () => {
+        getMessages: async () => {
             return Message.find().sort({ createdAt: -1 });
         },
-        message: async(parent, { _id }) => {
+        getMessage: async(parent, { _id }) => {
             return Message.findOne({ _id });
         }
     },
     
     Mutation: {
         addMessage: async (parent, args) => {
-            console.log('addmessage', args);
             const message = await Message.create(args);
 
             return message;
         }
     }
 }
+
+module.exports = resolvers;

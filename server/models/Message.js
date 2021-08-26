@@ -11,7 +11,7 @@ const messageSchema = new Schema(
             required: true,
             match: [/.+@.+\..+/, 'Must enter a valid email']
         },
-        message: {
+        messageBody: {
             type: String,
             required: true,
             minLength: 1

@@ -5,17 +5,17 @@ const typeDefs = gql `
         _id: ID
         name: String
         email: String
-        message: String
+        messageBody: String
         createdAt: String
     }
 
     type Query {
-        message(_id: ID!): Message
-        messages: [Message]
+        getMessage(_id: ID!): Message
+        getMessages: [Message]
     }
 
     type Mutation {
-        addMessage(name: String!, email: String!, message: String!): Message
+        addMessage(name: String!, email: String!, messageBody: String!): Message
     }
 `;
 

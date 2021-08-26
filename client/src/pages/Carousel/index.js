@@ -47,7 +47,7 @@ function Display({onClose, currentProject}) {
                         data={data}
                         time={4000}
                         width="950px"
-                        height="600px"
+                        height="550px"
                         captionStyle={captionStyle}
                         radius="10px"
                         slideNumber={true}

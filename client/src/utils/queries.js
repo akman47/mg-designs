@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const GET_ALL_MESSAGES = gql`
     {
-        messages {
+        getMessages {
             _id
             name
             email
@@ -13,8 +13,8 @@ export const GET_ALL_MESSAGES = gql`
 `;
 
 export const GET_ONE_MESSAGE = gql`
-    message {
-        message {
+    {
+        getMessage {
             _id
             name
             email
