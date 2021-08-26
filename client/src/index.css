@@ -109,13 +109,14 @@ header {
 
 .project-card:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .modal-project {
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 130%;
+  height: 150%;
   align-items: center;
   background-color: rgb(16, 58, 138);
   margin: 10px auto;
@@ -151,6 +152,29 @@ header {
   width: 47%;
   height: 300px;
   margin: 8px;
+}
+
+.carousel {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 145%;
+  align-items: center;
+  background-color: rgb(256, 256, 256);
+  margin: 10px auto;
+  overflow: auto;
+}
+
+.carousel-close {
+  float: right;
+  font-weight: bolder;
+  padding: 10px;
+  margin-right: 35px;
+  margin-bottom: 15px;
+}
+
+.carousel-close:hover {
+  cursor: pointer;
 }
 
 /* services style */

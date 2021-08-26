@@ -8,7 +8,7 @@ function Header({currentPage, handlePageChange}) {
 
     return(
         <header className="flex-row space-between">
-            <img className="logo" src={MgLogo}></img>
+            <img className="logo" src={MgLogo} alt="mg designs logo"></img>
             <ul className="flex-row align-item-center nav-bar">
                 {tabs.map(tab=> (
                     <li className={`nav-list ${currentPage === tab ? 'navActive' : ''}`} key={tab}>

@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
-import project1 from '../../assets/images/P1/1.jpg';
-import project2 from '../../assets/images/P2/2.jpg';
-import project3 from '../../assets/images/P3/2.jpg';
-import project4 from '../../assets/images/P4/2.jpg';
-import project5 from '../../assets/images/P5/3.jpg';
-import project6 from '../../assets/images/P6/8.jpg';
 import Modal from '../Modal';
+import Display from '../Carousel';
 
 function Portfolio() {
     const [projects] = useState([
@@ -58,7 +53,7 @@ function Portfolio() {
 
     return (
         <section>
-            {isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
+            {isModalOpen && <Display currentProject={currentProject} onClose={toggleModal} />}
              <div className="flex-row flex-wrap justify-center">
                 {projects.map((project) => {
                     const imgSrc=require(`../../assets/images/P${project.name}/${project.main}.jpg`);

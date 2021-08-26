@@ -33,6 +33,7 @@ function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+
     }
 
     return (
